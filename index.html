@@ -205,5 +205,7 @@
             inputs.forEach(input => input.removeAttribute('readonly'));
         }
 
-        function saveRoom(roomNumber) {
-            const room = document.getElementById(`room
+        function printRoom(roomNumber) {
+            const room = document.getElementById(`room-${roomNumber}`);
+            const printContents = room.innerHTML;
+            const originalContents = document.body
