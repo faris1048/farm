@@ -1,0 +1,1532 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desert Falcons UK - All Rooms</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Desert Falcons UK</h2>
+        <h3>All Rooms</h3>
+        <nav>
+            <button onclick="showRoom(1)" class="button">Room 1</button>
+            <button onclick="showRoom(2)" class="button">Room 2</button>
+            <!-- Add more buttons for each room -->
+            <button onclick="showRoom(36)" class="button">Room 36</button>
+        </nav>
+        <div id="room-details">
+            <!-- Room details will be displayed here -->
+        </div>
+    </div>
+    <script>
+        const rooms = {
+
+            1: `
+                <div class="section">
+                    <h3>Room 1</h3>
+                    <div class="details">
+                        <h4>Parents</h4>
+                        <p class="male-ring">Male Falcon Ring Number: <span id="male-ring">DESERTFALCON00011</span>
+                            <button onclick="editDetail('male-ring')" class="button">Edit</button>
+                        </p>
+                        <p class="female-ring">Female Falcon Ring Number: <span id="female-ring">DESERTFALCON00012</span>
+                            <button onclick="editDetail('female-ring')" class="button">Edit</button>
+                        </p>
+                        <h4>Offspring</h4>
+                        <p class="offspring-ring">Offspring Ring Number: <span id="offspring-ring">DESERTFALCON00013</span>
+                            <button onclick="editDetail('offspring-ring')" class="button">Edit</button>
+                        </p>
+                        <p class="offspring-hatch-date">Hatch Date: <span id="offspring-hatch-date">2024-03-01</span>
+                            <button onclick="editDetail('offspring-hatch-date')" class="button">Edit</button>
+                        </p>
+                        <p class="offspring-sex">Sex: <span id="offspring-sex">Male</span>
+                            <button onclick="editDetail('offspring-sex')" class="button">Edit</button>
+                        </p>
+                        <p class="species">Species: <span id="species">Falco peregrinus</span>
+                            <button onclick="editDetail('species')" class="button">Edit</button>
+                        </p>
+                        <h4>Grandparents</h4>
+                        <p>Father of Male: <span id="father-of-male">DESERTFALCON000101</span>
+                            <button onclick="editDetail('father-of-male')" class="button">Edit</button>
+                        </p>
+                        <p>Mother of Male: <span id="mother-of-male">DESERTFALCON000102</span>
+                            <button onclick="editDetail('mother-of-male')" class="button">Edit</button>
+                        </p>
+                        <p>Father of Female: <span id="father-of-female">DESERTFALCON000103</span>
+                            <button onclick="editDetail('father-of-female')" class="button">Edit</button>
+                        </p>
+                        <p>Mother of Female: <span id="mother-of-female">DESERTFALCON000104</span>
+                            <button onclick="editDetail('mother-of-female')" class="button">Edit</button>
+                        </p>
+                    </div>
+                </div>
+            `,
+
+            2: `
+                <div class="section">
+                    <h3>Room 2</h3>
+                    <div class="details">
+                        <h4>Parents</h4>
+                        <p class="male-ring">Male Falcon Ring Number: <span id="male-ring">DESERTFALCON00021</span>
+                            <button onclick="editDetail('male-ring')" class="button">Edit</button>
+                        </p>
+                        <p class="female-ring">Female Falcon Ring Number: <span id="female-ring">DESERTFALCON00022</span>
+                            <button onclick="editDetail('female-ring')" class="button">Edit</button>
+                        </p>
+                        <h4>Offspring</h4>
+                        <p class="offspring-ring">Offspring Ring Number: <span id="offspring-ring">DESERTFALCON00023</span>
+                            <button onclick="editDetail('offspring-ring')" class="button">Edit</button>
+                        </p>
+                        <p class="offspring-hatch-date">Hatch Date: <span id="offspring-hatch-date">2024-03-01</span>
+                            <button onclick="editDetail('offspring-hatch-date')" class="button">Edit</button>
+                        </p>
+                        <p class="offspring-sex">Sex: <span id="offspring-sex">Male</span>
+                            <button onclick="editDetail('offspring-sex')" class="button">Edit</button>
+                        </p>
+                        <p class="species">Species: <span id="species">Falco peregrinus</span>
+                            <button onclick="editDetail('species')" class="button">Edit</button>
+                        </p>
+                        <h4>Grandparents</h4>
+                        <p>Father of Male: <span id="father-of-male">DESERTFALCON000201</span>
+                            <button onclick="editDetail('father-of-male')" class="button">Edit</button>
+                        </p>
+                        <p>Mother of Male: <span id="mother-of-male">DESERTFALCON000202</span>
+                            <button onclick="editDetail('mother-of-male')" class="button">Edit</button>
+                        </p>
+                        <p>Father of Female: <span id="father-of-female">DESERTFALCON000203</span>
+                            <button onclick="editDetail('father-of-female')" class="button">Edit</button>
+                        </p>
+                        <p>Mother of Female: <span id="mother-of-female">DESERTFALCON000204</span>
+                            <button onclick="editDetail('mother-of-female')" class="button">Edit</button>
+                        </p>
+                    </div>
+                </div>
+            `,
+
+            3: `
+                <div class="section">
+                    <h3>Room 3</h3>
+                    <div class="details">
+                        <h4>Parents</h4>
+                        <p class="male-ring">Male Falcon Ring Number: <span id="male-ring">DESERTFALCON00031</span>
+                            <button onclick="editDetail('male-ring')" class="button">Edit</button>
+                        </p>
+                        <p class="female-ring">Female Falcon Ring Number: <span id="female-ring">DESERTFALCON00032</span>
+                            <button onclick="editDetail('female-ring')" class="button">Edit</button>
+                        </p>
+                        <h4>Offspring</h4>
+                        <p class="offspring-ring">Offspring Ring Number: <span id="offspring-ring">DESERTFALCON00033</span>
+                            <button onclick="editDetail('offspring-ring')" class="button">Edit</button>
+                        </p>
+                        <p class="offspring-hatch-date">Hatch Date: <span id="offspring-hatch-date">2024-03-01</span>
+                            <button onclick="editDetail('offspring-hatch-date')" class="button">Edit</button>
+                        </p>
+                        <p class="offspring-sex">Sex: <span id="offspring-sex">Male</span>
+                            <button onclick="editDetail('offspring-sex')" class="button">Edit</button>
+                        </p>
+                        <p class="species">Species: <span id="species">Falco peregrinus</span>
+                            <button onclick="editDetail('species')" class="button">Edit</button>
+                        </p>
+                        <h4>Grandparents</h4>
+                        <p>Father of Male: <span id="father-of-male">DESERTFALCON000301</span>
+                            <button onclick="editDetail('father-of-male')" class="button">Edit</button>
+                        </p>
+                        <p>Mother of Male: <span id="mother-of-male">DESERTFALCON000302</span>
+                            <button onclick="editDetail('mother-of-male')" class="button">Edit</button>
+                        </p>
+                        <p>Father of Female: <span id="father-of-female">DESERTFALCON000303</span>
+                            <button onclick="editDetail('father-of-female')" class="button">Edit</button>
+                        </p>
+                        <p>Mother of Female: <span id="mother-of-female">DESERTFALCON000304</span>
+                            <button onclick="editDetail('mother-of-female')" class="button">Edit</button>
+                        </p>
+                    </div>
+                </div>
+            `,
+
+            4: `
+                <div class="section">
+                    <h3>Room 4</h3>
+                    <div class="details">
+                        <h4>Parents</h4>
+                        <p class="male-ring">Male Falcon Ring Number: <span id="male-ring">DESERTFALCON00041</span>
+                            <button onclick="editDetail('male-ring')" class="button">Edit</button>
+                        </p>
+                        <p class="female-ring">Female Falcon Ring Number: <span id="female-ring">DESERTFALCON00042</span>
+                            <button onclick="editDetail('female-ring')" class="button">Edit</button>
+                        </p>
+                        <h4>Offspring</h4>
+                        <p class="offspring-ring">Offspring Ring Number: <span id="offspring-ring">DESERTFALCON00043</span>
+                            <button onclick="editDetail('offspring-ring')" class="button">Edit</button>
+                        </p>
+                        <p class="offspring-hatch-date">Hatch Date: <span id="offspring-hatch-date">2024-03-01</span>
+                            <button onclick="editDetail('offspring-hatch-date')" class="button">Edit</button>
+                        </p>
+                        <p class="offspring-sex">Sex: <span id="offspring-sex">Male</span>
+                            <button onclick="editDetail('offspring-sex')" class="button">Edit</button>
+                        </p>
+                        <p class="species">Species: <span id="species">Falco peregrinus</span>
+                            <button onclick="editDetail('species')" class="button">Edit</button>
+                        </p>
+                        <h4>Grandparents</h4>
+                        <p>Father of Male: <span id="father-of-male">DESERTFALCON000401</span>
+                            <button onclick="editDetail('father-of-male')" class="button">Edit</button>
+                        </p>
+                        <p>Mother of Male: <span id="mother-of-male">DESERTFALCON000402</span>
+                            <button onclick="editDetail('mother-of-male')" class="button">Edit</button>
+                        </p>
+                        <p>Father of Female: <span id="father-of-female">DESERTFALCON000403</span>
+                            <button onclick="editDetail('father-of-female')" class="button">Edit</button>
+                        </p>
+                        <p>Mother of Female: <span id="mother-of-female">DESERTFALCON000404</span>
+                            <button onclick="editDetail('mother-of-female')" class="button">Edit</button>
+                        </p>
+                    </div>
+                </div>
+            `,
+
+            5: `
+                <div class="section">
+                    <h3>Room 5</h3>
+                    <div class="details">
+                        <h4>Parents</h4>
+                        <p class="male-ring">Male Falcon Ring Number: <span id="male-ring">DESERTFALCON00051</span>
+                            <button onclick="editDetail('male-ring')" class="button">Edit</button>
+                        </p>
+                        <p class="female-ring">Female Falcon Ring Number: <span id="female-ring">DESERTFALCON00052</span>
+                            <button onclick="editDetail('female-ring')" class="button">Edit</button>
+                        </p>
+                        <h4>Offspring</h4>
+                        <p class="offspring-ring">Offspring Ring Number: <span id="offspring-ring">DESERTFALCON00053</span>
+                            <button onclick="editDetail('offspring-ring')" class="button">Edit</button>
+                        </p>
+                        <p class="offspring-hatch-date">Hatch Date: <span id="offspring-hatch-date">2024-03-01</span>
+                            <button onclick="editDetail('offspring-hatch-date')" class="button">Edit</button>
+                        </p>
+                        <p class="offspring-sex">Sex: <span id="offspring-sex">Male</span>
+                            <button onclick="editDetail('offspring-sex')" class="button">Edit</button>
+                        </p>
+                        <p class="species">Species: <span id="species">Falco peregrinus</span>
+                            <button onclick="editDetail('species')" class="button">Edit</button>
+                        </p>
+                        <h4>Grandparents</h4>
+                        <p>Father of Male: <span id="father-of-male">DESERTFALCON000501</span>
+                            <button onclick="editDetail('father-of-male')" class="button">Edit</button>
+                        </p>
+                        <p>Mother of Male: <span id="mother-of-male">DESERTFALCON000502</span>
+                            <button onclick="editDetail('mother-of-male')" class="button">Edit</button>
+                        </p>
+                        <p>Father of Female: <span id="father-of-female">DESERTFALCON000503</span>
+                            <button onclick="editDetail('father-of-female')" class="button">Edit</button>
+                        </p>
+                        <p>Mother of Female: <span id="mother-of-female">DESERTFALCON000504</span>
+                            <button onclick="editDetail('mother-of-female')" class="button">Edit</button>
+                        </p>
+                    </div>
+                </div>
+            `,
+
+            6: `
+                <div class="section">
+                    <h3>Room 6</h3>
+                    <div class="details">
+                        <h4>Parents</h4>
+                        <p class="male-ring">Male Falcon Ring Number: <span id="male-ring">DESERTFALCON00061</span>
+                            <button onclick="editDetail('male-ring')" class="button">Edit</button>
+                        </p>
+                        <p class="female-ring">Female Falcon Ring Number: <span id="female-ring">DESERTFALCON00062</span>
+                            <button onclick="editDetail('female-ring')" class="button">Edit</button>
+                        </p>
+                        <h4>Offspring</h4>
+                        <p class="offspring-ring">Offspring Ring Number: <span id="offspring-ring">DESERTFALCON00063</span>
+                            <button onclick="editDetail('offspring-ring')" class="button">Edit</button>
+                        </p>
+                        <p class="offspring-hatch-date">Hatch Date: <span id="offspring-hatch-date">2024-03-01</span>
+                            <button onclick="editDetail('offspring-hatch-date')" class="button">Edit</button>
+                        </p>
+                        <p class="offspring-sex">Sex: <span id="offspring-sex">Male</span>
+                            <button onclick="editDetail('offspring-sex')" class="button">Edit</button>
+                        </p>
+                        <p class="species">Species: <span id="species">Falco peregrinus</span>
+                            <button onclick="editDetail('species')" class="button">Edit</button>
+                        </p>
+                        <h4>Grandparents</h4>
+                        <p>Father of Male: <span id="father-of-male">DESERTFALCON000601</span>
+                            <button onclick="editDetail('father-of-male')" class="button">Edit</button>
+                        </p>
+                        <p>Mother of Male: <span id="mother-of-male">DESERTFALCON000602</span>
+                            <button onclick="editDetail('mother-of-male')" class="button">Edit</button>
+                        </p>
+                        <p>Father of Female: <span id="father-of-female">DESERTFALCON000603</span>
+                            <button onclick="editDetail('father-of-female')" class="button">Edit</button>
+                        </p>
+                        <p>Mother of Female: <span id="mother-of-female">DESERTFALCON000604</span>
+                            <button onclick="editDetail('mother-of-female')" class="button">Edit</button>
+                        </p>
+                    </div>
+                </div>
+            `,
+
+            7: `
+                <div class="section">
+                    <h3>Room 7</h3>
+                    <div class="details">
+                        <h4>Parents</h4>
+                        <p class="male-ring">Male Falcon Ring Number: <span id="male-ring">DESERTFALCON00071</span>
+                            <button onclick="editDetail('male-ring')" class="button">Edit</button>
+                        </p>
+                        <p class="female-ring">Female Falcon Ring Number: <span id="female-ring">DESERTFALCON00072</span>
+                            <button onclick="editDetail('female-ring')" class="button">Edit</button>
+                        </p>
+                        <h4>Offspring</h4>
+                        <p class="offspring-ring">Offspring Ring Number: <span id="offspring-ring">DESERTFALCON00073</span>
+                            <button onclick="editDetail('offspring-ring')" class="button">Edit</button>
+                        </p>
+                        <p class="offspring-hatch-date">Hatch Date: <span id="offspring-hatch-date">2024-03-01</span>
+                            <button onclick="editDetail('offspring-hatch-date')" class="button">Edit</button>
+                        </p>
+                        <p class="offspring-sex">Sex: <span id="offspring-sex">Male</span>
+                            <button onclick="editDetail('offspring-sex')" class="button">Edit</button>
+                        </p>
+                        <p class="species">Species: <span id="species">Falco peregrinus</span>
+                            <button onclick="editDetail('species')" class="button">Edit</button>
+                        </p>
+                        <h4>Grandparents</h4>
+                        <p>Father of Male: <span id="father-of-male">DESERTFALCON000701</span>
+                            <button onclick="editDetail('father-of-male')" class="button">Edit</button>
+                        </p>
+                        <p>Mother of Male: <span id="mother-of-male">DESERTFALCON000702</span>
+                            <button onclick="editDetail('mother-of-male')" class="button">Edit</button>
+                        </p>
+                        <p>Father of Female: <span id="father-of-female">DESERTFALCON000703</span>
+                            <button onclick="editDetail('father-of-female')" class="button">Edit</button>
+                        </p>
+                        <p>Mother of Female: <span id="mother-of-female">DESERTFALCON000704</span>
+                            <button onclick="editDetail('mother-of-female')" class="button">Edit</button>
+                        </p>
+                    </div>
+                </div>
+            `,
+
+            8: `
+                <div class="section">
+                    <h3>Room 8</h3>
+                    <div class="details">
+                        <h4>Parents</h4>
+                        <p class="male-ring">Male Falcon Ring Number: <span id="male-ring">DESERTFALCON00081</span>
+                            <button onclick="editDetail('male-ring')" class="button">Edit</button>
+                        </p>
+                        <p class="female-ring">Female Falcon Ring Number: <span id="female-ring">DESERTFALCON00082</span>
+                            <button onclick="editDetail('female-ring')" class="button">Edit</button>
+                        </p>
+                        <h4>Offspring</h4>
+                        <p class="offspring-ring">Offspring Ring Number: <span id="offspring-ring">DESERTFALCON00083</span>
+                            <button onclick="editDetail('offspring-ring')" class="button">Edit</button>
+                        </p>
+                        <p class="offspring-hatch-date">Hatch Date: <span id="offspring-hatch-date">2024-03-01</span>
+                            <button onclick="editDetail('offspring-hatch-date')" class="button">Edit</button>
+                        </p>
+                        <p class="offspring-sex">Sex: <span id="offspring-sex">Male</span>
+                            <button onclick="editDetail('offspring-sex')" class="button">Edit</button>
+                        </p>
+                        <p class="species">Species: <span id="species">Falco peregrinus</span>
+                            <button onclick="editDetail('species')" class="button">Edit</button>
+                        </p>
+                        <h4>Grandparents</h4>
+                        <p>Father of Male: <span id="father-of-male">DESERTFALCON000801</span>
+                            <button onclick="editDetail('father-of-male')" class="button">Edit</button>
+                        </p>
+                        <p>Mother of Male: <span id="mother-of-male">DESERTFALCON000802</span>
+                            <button onclick="editDetail('mother-of-male')" class="button">Edit</button>
+                        </p>
+                        <p>Father of Female: <span id="father-of-female">DESERTFALCON000803</span>
+                            <button onclick="editDetail('father-of-female')" class="button">Edit</button>
+                        </p>
+                        <p>Mother of Female: <span id="mother-of-female">DESERTFALCON000804</span>
+                            <button onclick="editDetail('mother-of-female')" class="button">Edit</button>
+                        </p>
+                    </div>
+                </div>
+            `,
+
+            9: `
+                <div class="section">
+                    <h3>Room 9</h3>
+                    <div class="details">
+                        <h4>Parents</h4>
+                        <p class="male-ring">Male Falcon Ring Number: <span id="male-ring">DESERTFALCON00091</span>
+                            <button onclick="editDetail('male-ring')" class="button">Edit</button>
+                        </p>
+                        <p class="female-ring">Female Falcon Ring Number: <span id="female-ring">DESERTFALCON00092</span>
+                            <button onclick="editDetail('female-ring')" class="button">Edit</button>
+                        </p>
+                        <h4>Offspring</h4>
+                        <p class="offspring-ring">Offspring Ring Number: <span id="offspring-ring">DESERTFALCON00093</span>
+                            <button onclick="editDetail('offspring-ring')" class="button">Edit</button>
+                        </p>
+                        <p class="offspring-hatch-date">Hatch Date: <span id="offspring-hatch-date">2024-03-01</span>
+                            <button onclick="editDetail('offspring-hatch-date')" class="button">Edit</button>
+                        </p>
+                        <p class="offspring-sex">Sex: <span id="offspring-sex">Male</span>
+                            <button onclick="editDetail('offspring-sex')" class="button">Edit</button>
+                        </p>
+                        <p class="species">Species: <span id="species">Falco peregrinus</span>
+                            <button onclick="editDetail('species')" class="button">Edit</button>
+                        </p>
+                        <h4>Grandparents</h4>
+                        <p>Father of Male: <span id="father-of-male">DESERTFALCON000901</span>
+                            <button onclick="editDetail('father-of-male')" class="button">Edit</button>
+                        </p>
+                        <p>Mother of Male: <span id="mother-of-male">DESERTFALCON000902</span>
+                            <button onclick="editDetail('mother-of-male')" class="button">Edit</button>
+                        </p>
+                        <p>Father of Female: <span id="father-of-female">DESERTFALCON000903</span>
+                            <button onclick="editDetail('father-of-female')" class="button">Edit</button>
+                        </p>
+                        <p>Mother of Female: <span id="mother-of-female">DESERTFALCON000904</span>
+                            <button onclick="editDetail('mother-of-female')" class="button">Edit</button>
+                        </p>
+                    </div>
+                </div>
+            `,
+
+            10: `
+                <div class="section">
+                    <h3>Room 10</h3>
+                    <div class="details">
+                        <h4>Parents</h4>
+                        <p class="male-ring">Male Falcon Ring Number: <span id="male-ring">DESERTFALCON00101</span>
+                            <button onclick="editDetail('male-ring')" class="button">Edit</button>
+                        </p>
+                        <p class="female-ring">Female Falcon Ring Number: <span id="female-ring">DESERTFALCON00102</span>
+                            <button onclick="editDetail('female-ring')" class="button">Edit</button>
+                        </p>
+                        <h4>Offspring</h4>
+                        <p class="offspring-ring">Offspring Ring Number: <span id="offspring-ring">DESERTFALCON00103</span>
+                            <button onclick="editDetail('offspring-ring')" class="button">Edit</button>
+                        </p>
+                        <p class="offspring-hatch-date">Hatch Date: <span id="offspring-hatch-date">2024-03-01</span>
+                            <button onclick="editDetail('offspring-hatch-date')" class="button">Edit</button>
+                        </p>
+                        <p class="offspring-sex">Sex: <span id="offspring-sex">Male</span>
+                            <button onclick="editDetail('offspring-sex')" class="button">Edit</button>
+                        </p>
+                        <p class="species">Species: <span id="species">Falco peregrinus</span>
+                            <button onclick="editDetail('species')" class="button">Edit</button>
+                        </p>
+                        <h4>Grandparents</h4>
+                        <p>Father of Male: <span id="father-of-male">DESERTFALCON001001</span>
+                            <button onclick="editDetail('father-of-male')" class="button">Edit</button>
+                        </p>
+                        <p>Mother of Male: <span id="mother-of-male">DESERTFALCON001002</span>
+                            <button onclick="editDetail('mother-of-male')" class="button">Edit</button>
+                        </p>
+                        <p>Father of Female: <span id="father-of-female">DESERTFALCON001003</span>
+                            <button onclick="editDetail('father-of-female')" class="button">Edit</button>
+                        </p>
+                        <p>Mother of Female: <span id="mother-of-female">DESERTFALCON001004</span>
+                            <button onclick="editDetail('mother-of-female')" class="button">Edit</button>
+                        </p>
+                    </div>
+                </div>
+            `,
+
+            11: `
+                <div class="section">
+                    <h3>Room 11</h3>
+                    <div class="details">
+                        <h4>Parents</h4>
+                        <p class="male-ring">Male Falcon Ring Number: <span id="male-ring">DESERTFALCON00111</span>
+                            <button onclick="editDetail('male-ring')" class="button">Edit</button>
+                        </p>
+                        <p class="female-ring">Female Falcon Ring Number: <span id="female-ring">DESERTFALCON00112</span>
+                            <button onclick="editDetail('female-ring')" class="button">Edit</button>
+                        </p>
+                        <h4>Offspring</h4>
+                        <p class="offspring-ring">Offspring Ring Number: <span id="offspring-ring">DESERTFALCON00113</span>
+                            <button onclick="editDetail('offspring-ring')" class="button">Edit</button>
+                        </p>
+                        <p class="offspring-hatch-date">Hatch Date: <span id="offspring-hatch-date">2024-03-01</span>
+                            <button onclick="editDetail('offspring-hatch-date')" class="button">Edit</button>
+                        </p>
+                        <p class="offspring-sex">Sex: <span id="offspring-sex">Male</span>
+                            <button onclick="editDetail('offspring-sex')" class="button">Edit</button>
+                        </p>
+                        <p class="species">Species: <span id="species">Falco peregrinus</span>
+                            <button onclick="editDetail('species')" class="button">Edit</button>
+                        </p>
+                        <h4>Grandparents</h4>
+                        <p>Father of Male: <span id="father-of-male">DESERTFALCON001101</span>
+                            <button onclick="editDetail('father-of-male')" class="button">Edit</button>
+                        </p>
+                        <p>Mother of Male: <span id="mother-of-male">DESERTFALCON001102</span>
+                            <button onclick="editDetail('mother-of-male')" class="button">Edit</button>
+                        </p>
+                        <p>Father of Female: <span id="father-of-female">DESERTFALCON001103</span>
+                            <button onclick="editDetail('father-of-female')" class="button">Edit</button>
+                        </p>
+                        <p>Mother of Female: <span id="mother-of-female">DESERTFALCON001104</span>
+                            <button onclick="editDetail('mother-of-female')" class="button">Edit</button>
+                        </p>
+                    </div>
+                </div>
+            `,
+
+            12: `
+                <div class="section">
+                    <h3>Room 12</h3>
+                    <div class="details">
+                        <h4>Parents</h4>
+                        <p class="male-ring">Male Falcon Ring Number: <span id="male-ring">DESERTFALCON00121</span>
+                            <button onclick="editDetail('male-ring')" class="button">Edit</button>
+                        </p>
+                        <p class="female-ring">Female Falcon Ring Number: <span id="female-ring">DESERTFALCON00122</span>
+                            <button onclick="editDetail('female-ring')" class="button">Edit</button>
+                        </p>
+                        <h4>Offspring</h4>
+                        <p class="offspring-ring">Offspring Ring Number: <span id="offspring-ring">DESERTFALCON00123</span>
+                            <button onclick="editDetail('offspring-ring')" class="button">Edit</button>
+                        </p>
+                        <p class="offspring-hatch-date">Hatch Date: <span id="offspring-hatch-date">2024-03-01</span>
+                            <button onclick="editDetail('offspring-hatch-date')" class="button">Edit</button>
+                        </p>
+                        <p class="offspring-sex">Sex: <span id="offspring-sex">Male</span>
+                            <button onclick="editDetail('offspring-sex')" class="button">Edit</button>
+                        </p>
+                        <p class="species">Species: <span id="species">Falco peregrinus</span>
+                            <button onclick="editDetail('species')" class="button">Edit</button>
+                        </p>
+                        <h4>Grandparents</h4>
+                        <p>Father of Male: <span id="father-of-male">DESERTFALCON001201</span>
+                            <button onclick="editDetail('father-of-male')" class="button">Edit</button>
+                        </p>
+                        <p>Mother of Male: <span id="mother-of-male">DESERTFALCON001202</span>
+                            <button onclick="editDetail('mother-of-male')" class="button">Edit</button>
+                        </p>
+                        <p>Father of Female: <span id="father-of-female">DESERTFALCON001203</span>
+                            <button onclick="editDetail('father-of-female')" class="button">Edit</button>
+                        </p>
+                        <p>Mother of Female: <span id="mother-of-female">DESERTFALCON001204</span>
+                            <button onclick="editDetail('mother-of-female')" class="button">Edit</button>
+                        </p>
+                    </div>
+                </div>
+            `,
+
+            13: `
+                <div class="section">
+                    <h3>Room 13</h3>
+                    <div class="details">
+                        <h4>Parents</h4>
+                        <p class="male-ring">Male Falcon Ring Number: <span id="male-ring">DESERTFALCON00131</span>
+                            <button onclick="editDetail('male-ring')" class="button">Edit</button>
+                        </p>
+                        <p class="female-ring">Female Falcon Ring Number: <span id="female-ring">DESERTFALCON00132</span>
+                            <button onclick="editDetail('female-ring')" class="button">Edit</button>
+                        </p>
+                        <h4>Offspring</h4>
+                        <p class="offspring-ring">Offspring Ring Number: <span id="offspring-ring">DESERTFALCON00133</span>
+                            <button onclick="editDetail('offspring-ring')" class="button">Edit</button>
+                        </p>
+                        <p class="offspring-hatch-date">Hatch Date: <span id="offspring-hatch-date">2024-03-01</span>
+                            <button onclick="editDetail('offspring-hatch-date')" class="button">Edit</button>
+                        </p>
+                        <p class="offspring-sex">Sex: <span id="offspring-sex">Male</span>
+                            <button onclick="editDetail('offspring-sex')" class="button">Edit</button>
+                        </p>
+                        <p class="species">Species: <span id="species">Falco peregrinus</span>
+                            <button onclick="editDetail('species')" class="button">Edit</button>
+                        </p>
+                        <h4>Grandparents</h4>
+                        <p>Father of Male: <span id="father-of-male">DESERTFALCON001301</span>
+                            <button onclick="editDetail('father-of-male')" class="button">Edit</button>
+                        </p>
+                        <p>Mother of Male: <span id="mother-of-male">DESERTFALCON001302</span>
+                            <button onclick="editDetail('mother-of-male')" class="button">Edit</button>
+                        </p>
+                        <p>Father of Female: <span id="father-of-female">DESERTFALCON001303</span>
+                            <button onclick="editDetail('father-of-female')" class="button">Edit</button>
+                        </p>
+                        <p>Mother of Female: <span id="mother-of-female">DESERTFALCON001304</span>
+                            <button onclick="editDetail('mother-of-female')" class="button">Edit</button>
+                        </p>
+                    </div>
+                </div>
+            `,
+
+            14: `
+                <div class="section">
+                    <h3>Room 14</h3>
+                    <div class="details">
+                        <h4>Parents</h4>
+                        <p class="male-ring">Male Falcon Ring Number: <span id="male-ring">DESERTFALCON00141</span>
+                            <button onclick="editDetail('male-ring')" class="button">Edit</button>
+                        </p>
+                        <p class="female-ring">Female Falcon Ring Number: <span id="female-ring">DESERTFALCON00142</span>
+                            <button onclick="editDetail('female-ring')" class="button">Edit</button>
+                        </p>
+                        <h4>Offspring</h4>
+                        <p class="offspring-ring">Offspring Ring Number: <span id="offspring-ring">DESERTFALCON00143</span>
+                            <button onclick="editDetail('offspring-ring')" class="button">Edit</button>
+                        </p>
+                        <p class="offspring-hatch-date">Hatch Date: <span id="offspring-hatch-date">2024-03-01</span>
+                            <button onclick="editDetail('offspring-hatch-date')" class="button">Edit</button>
+                        </p>
+                        <p class="offspring-sex">Sex: <span id="offspring-sex">Male</span>
+                            <button onclick="editDetail('offspring-sex')" class="button">Edit</button>
+                        </p>
+                        <p class="species">Species: <span id="species">Falco peregrinus</span>
+                            <button onclick="editDetail('species')" class="button">Edit</button>
+                        </p>
+                        <h4>Grandparents</h4>
+                        <p>Father of Male: <span id="father-of-male">DESERTFALCON001401</span>
+                            <button onclick="editDetail('father-of-male')" class="button">Edit</button>
+                        </p>
+                        <p>Mother of Male: <span id="mother-of-male">DESERTFALCON001402</span>
+                            <button onclick="editDetail('mother-of-male')" class="button">Edit</button>
+                        </p>
+                        <p>Father of Female: <span id="father-of-female">DESERTFALCON001403</span>
+                            <button onclick="editDetail('father-of-female')" class="button">Edit</button>
+                        </p>
+                        <p>Mother of Female: <span id="mother-of-female">DESERTFALCON001404</span>
+                            <button onclick="editDetail('mother-of-female')" class="button">Edit</button>
+                        </p>
+                    </div>
+                </div>
+            `,
+
+            15: `
+                <div class="section">
+                    <h3>Room 15</h3>
+                    <div class="details">
+                        <h4>Parents</h4>
+                        <p class="male-ring">Male Falcon Ring Number: <span id="male-ring">DESERTFALCON00151</span>
+                            <button onclick="editDetail('male-ring')" class="button">Edit</button>
+                        </p>
+                        <p class="female-ring">Female Falcon Ring Number: <span id="female-ring">DESERTFALCON00152</span>
+                            <button onclick="editDetail('female-ring')" class="button">Edit</button>
+                        </p>
+                        <h4>Offspring</h4>
+                        <p class="offspring-ring">Offspring Ring Number: <span id="offspring-ring">DESERTFALCON00153</span>
+                            <button onclick="editDetail('offspring-ring')" class="button">Edit</button>
+                        </p>
+                        <p class="offspring-hatch-date">Hatch Date: <span id="offspring-hatch-date">2024-03-01</span>
+                            <button onclick="editDetail('offspring-hatch-date')" class="button">Edit</button>
+                        </p>
+                        <p class="offspring-sex">Sex: <span id="offspring-sex">Male</span>
+                            <button onclick="editDetail('offspring-sex')" class="button">Edit</button>
+                        </p>
+                        <p class="species">Species: <span id="species">Falco peregrinus</span>
+                            <button onclick="editDetail('species')" class="button">Edit</button>
+                        </p>
+                        <h4>Grandparents</h4>
+                        <p>Father of Male: <span id="father-of-male">DESERTFALCON001501</span>
+                            <button onclick="editDetail('father-of-male')" class="button">Edit</button>
+                        </p>
+                        <p>Mother of Male: <span id="mother-of-male">DESERTFALCON001502</span>
+                            <button onclick="editDetail('mother-of-male')" class="button">Edit</button>
+                        </p>
+                        <p>Father of Female: <span id="father-of-female">DESERTFALCON001503</span>
+                            <button onclick="editDetail('father-of-female')" class="button">Edit</button>
+                        </p>
+                        <p>Mother of Female: <span id="mother-of-female">DESERTFALCON001504</span>
+                            <button onclick="editDetail('mother-of-female')" class="button">Edit</button>
+                        </p>
+                    </div>
+                </div>
+            `,
+
+            16: `
+                <div class="section">
+                    <h3>Room 16</h3>
+                    <div class="details">
+                        <h4>Parents</h4>
+                        <p class="male-ring">Male Falcon Ring Number: <span id="male-ring">DESERTFALCON00161</span>
+                            <button onclick="editDetail('male-ring')" class="button">Edit</button>
+                        </p>
+                        <p class="female-ring">Female Falcon Ring Number: <span id="female-ring">DESERTFALCON00162</span>
+                            <button onclick="editDetail('female-ring')" class="button">Edit</button>
+                        </p>
+                        <h4>Offspring</h4>
+                        <p class="offspring-ring">Offspring Ring Number: <span id="offspring-ring">DESERTFALCON00163</span>
+                            <button onclick="editDetail('offspring-ring')" class="button">Edit</button>
+                        </p>
+                        <p class="offspring-hatch-date">Hatch Date: <span id="offspring-hatch-date">2024-03-01</span>
+                            <button onclick="editDetail('offspring-hatch-date')" class="button">Edit</button>
+                        </p>
+                        <p class="offspring-sex">Sex: <span id="offspring-sex">Male</span>
+                            <button onclick="editDetail('offspring-sex')" class="button">Edit</button>
+                        </p>
+                        <p class="species">Species: <span id="species">Falco peregrinus</span>
+                            <button onclick="editDetail('species')" class="button">Edit</button>
+                        </p>
+                        <h4>Grandparents</h4>
+                        <p>Father of Male: <span id="father-of-male">DESERTFALCON001601</span>
+                            <button onclick="editDetail('father-of-male')" class="button">Edit</button>
+                        </p>
+                        <p>Mother of Male: <span id="mother-of-male">DESERTFALCON001602</span>
+                            <button onclick="editDetail('mother-of-male')" class="button">Edit</button>
+                        </p>
+                        <p>Father of Female: <span id="father-of-female">DESERTFALCON001603</span>
+                            <button onclick="editDetail('father-of-female')" class="button">Edit</button>
+                        </p>
+                        <p>Mother of Female: <span id="mother-of-female">DESERTFALCON001604</span>
+                            <button onclick="editDetail('mother-of-female')" class="button">Edit</button>
+                        </p>
+                    </div>
+                </div>
+            `,
+
+            17: `
+                <div class="section">
+                    <h3>Room 17</h3>
+                    <div class="details">
+                        <h4>Parents</h4>
+                        <p class="male-ring">Male Falcon Ring Number: <span id="male-ring">DESERTFALCON00171</span>
+                            <button onclick="editDetail('male-ring')" class="button">Edit</button>
+                        </p>
+                        <p class="female-ring">Female Falcon Ring Number: <span id="female-ring">DESERTFALCON00172</span>
+                            <button onclick="editDetail('female-ring')" class="button">Edit</button>
+                        </p>
+                        <h4>Offspring</h4>
+                        <p class="offspring-ring">Offspring Ring Number: <span id="offspring-ring">DESERTFALCON00173</span>
+                            <button onclick="editDetail('offspring-ring')" class="button">Edit</button>
+                        </p>
+                        <p class="offspring-hatch-date">Hatch Date: <span id="offspring-hatch-date">2024-03-01</span>
+                            <button onclick="editDetail('offspring-hatch-date')" class="button">Edit</button>
+                        </p>
+                        <p class="offspring-sex">Sex: <span id="offspring-sex">Male</span>
+                            <button onclick="editDetail('offspring-sex')" class="button">Edit</button>
+                        </p>
+                        <p class="species">Species: <span id="species">Falco peregrinus</span>
+                            <button onclick="editDetail('species')" class="button">Edit</button>
+                        </p>
+                        <h4>Grandparents</h4>
+                        <p>Father of Male: <span id="father-of-male">DESERTFALCON001701</span>
+                            <button onclick="editDetail('father-of-male')" class="button">Edit</button>
+                        </p>
+                        <p>Mother of Male: <span id="mother-of-male">DESERTFALCON001702</span>
+                            <button onclick="editDetail('mother-of-male')" class="button">Edit</button>
+                        </p>
+                        <p>Father of Female: <span id="father-of-female">DESERTFALCON001703</span>
+                            <button onclick="editDetail('father-of-female')" class="button">Edit</button>
+                        </p>
+                        <p>Mother of Female: <span id="mother-of-female">DESERTFALCON001704</span>
+                            <button onclick="editDetail('mother-of-female')" class="button">Edit</button>
+                        </p>
+                    </div>
+                </div>
+            `,
+
+            18: `
+                <div class="section">
+                    <h3>Room 18</h3>
+                    <div class="details">
+                        <h4>Parents</h4>
+                        <p class="male-ring">Male Falcon Ring Number: <span id="male-ring">DESERTFALCON00181</span>
+                            <button onclick="editDetail('male-ring')" class="button">Edit</button>
+                        </p>
+                        <p class="female-ring">Female Falcon Ring Number: <span id="female-ring">DESERTFALCON00182</span>
+                            <button onclick="editDetail('female-ring')" class="button">Edit</button>
+                        </p>
+                        <h4>Offspring</h4>
+                        <p class="offspring-ring">Offspring Ring Number: <span id="offspring-ring">DESERTFALCON00183</span>
+                            <button onclick="editDetail('offspring-ring')" class="button">Edit</button>
+                        </p>
+                        <p class="offspring-hatch-date">Hatch Date: <span id="offspring-hatch-date">2024-03-01</span>
+                            <button onclick="editDetail('offspring-hatch-date')" class="button">Edit</button>
+                        </p>
+                        <p class="offspring-sex">Sex: <span id="offspring-sex">Male</span>
+                            <button onclick="editDetail('offspring-sex')" class="button">Edit</button>
+                        </p>
+                        <p class="species">Species: <span id="species">Falco peregrinus</span>
+                            <button onclick="editDetail('species')" class="button">Edit</button>
+                        </p>
+                        <h4>Grandparents</h4>
+                        <p>Father of Male: <span id="father-of-male">DESERTFALCON001801</span>
+                            <button onclick="editDetail('father-of-male')" class="button">Edit</button>
+                        </p>
+                        <p>Mother of Male: <span id="mother-of-male">DESERTFALCON001802</span>
+                            <button onclick="editDetail('mother-of-male')" class="button">Edit</button>
+                        </p>
+                        <p>Father of Female: <span id="father-of-female">DESERTFALCON001803</span>
+                            <button onclick="editDetail('father-of-female')" class="button">Edit</button>
+                        </p>
+                        <p>Mother of Female: <span id="mother-of-female">DESERTFALCON001804</span>
+                            <button onclick="editDetail('mother-of-female')" class="button">Edit</button>
+                        </p>
+                    </div>
+                </div>
+            `,
+
+            19: `
+                <div class="section">
+                    <h3>Room 19</h3>
+                    <div class="details">
+                        <h4>Parents</h4>
+                        <p class="male-ring">Male Falcon Ring Number: <span id="male-ring">DESERTFALCON00191</span>
+                            <button onclick="editDetail('male-ring')" class="button">Edit</button>
+                        </p>
+                        <p class="female-ring">Female Falcon Ring Number: <span id="female-ring">DESERTFALCON00192</span>
+                            <button onclick="editDetail('female-ring')" class="button">Edit</button>
+                        </p>
+                        <h4>Offspring</h4>
+                        <p class="offspring-ring">Offspring Ring Number: <span id="offspring-ring">DESERTFALCON00193</span>
+                            <button onclick="editDetail('offspring-ring')" class="button">Edit</button>
+                        </p>
+                        <p class="offspring-hatch-date">Hatch Date: <span id="offspring-hatch-date">2024-03-01</span>
+                            <button onclick="editDetail('offspring-hatch-date')" class="button">Edit</button>
+                        </p>
+                        <p class="offspring-sex">Sex: <span id="offspring-sex">Male</span>
+                            <button onclick="editDetail('offspring-sex')" class="button">Edit</button>
+                        </p>
+                        <p class="species">Species: <span id="species">Falco peregrinus</span>
+                            <button onclick="editDetail('species')" class="button">Edit</button>
+                        </p>
+                        <h4>Grandparents</h4>
+                        <p>Father of Male: <span id="father-of-male">DESERTFALCON001901</span>
+                            <button onclick="editDetail('father-of-male')" class="button">Edit</button>
+                        </p>
+                        <p>Mother of Male: <span id="mother-of-male">DESERTFALCON001902</span>
+                            <button onclick="editDetail('mother-of-male')" class="button">Edit</button>
+                        </p>
+                        <p>Father of Female: <span id="father-of-female">DESERTFALCON001903</span>
+                            <button onclick="editDetail('father-of-female')" class="button">Edit</button>
+                        </p>
+                        <p>Mother of Female: <span id="mother-of-female">DESERTFALCON001904</span>
+                            <button onclick="editDetail('mother-of-female')" class="button">Edit</button>
+                        </p>
+                    </div>
+                </div>
+            `,
+
+            20: `
+                <div class="section">
+                    <h3>Room 20</h3>
+                    <div class="details">
+                        <h4>Parents</h4>
+                        <p class="male-ring">Male Falcon Ring Number: <span id="male-ring">DESERTFALCON00201</span>
+                            <button onclick="editDetail('male-ring')" class="button">Edit</button>
+                        </p>
+                        <p class="female-ring">Female Falcon Ring Number: <span id="female-ring">DESERTFALCON00202</span>
+                            <button onclick="editDetail('female-ring')" class="button">Edit</button>
+                        </p>
+                        <h4>Offspring</h4>
+                        <p class="offspring-ring">Offspring Ring Number: <span id="offspring-ring">DESERTFALCON00203</span>
+                            <button onclick="editDetail('offspring-ring')" class="button">Edit</button>
+                        </p>
+                        <p class="offspring-hatch-date">Hatch Date: <span id="offspring-hatch-date">2024-03-01</span>
+                            <button onclick="editDetail('offspring-hatch-date')" class="button">Edit</button>
+                        </p>
+                        <p class="offspring-sex">Sex: <span id="offspring-sex">Male</span>
+                            <button onclick="editDetail('offspring-sex')" class="button">Edit</button>
+                        </p>
+                        <p class="species">Species: <span id="species">Falco peregrinus</span>
+                            <button onclick="editDetail('species')" class="button">Edit</button>
+                        </p>
+                        <h4>Grandparents</h4>
+                        <p>Father of Male: <span id="father-of-male">DESERTFALCON002001</span>
+                            <button onclick="editDetail('father-of-male')" class="button">Edit</button>
+                        </p>
+                        <p>Mother of Male: <span id="mother-of-male">DESERTFALCON002002</span>
+                            <button onclick="editDetail('mother-of-male')" class="button">Edit</button>
+                        </p>
+                        <p>Father of Female: <span id="father-of-female">DESERTFALCON002003</span>
+                            <button onclick="editDetail('father-of-female')" class="button">Edit</button>
+                        </p>
+                        <p>Mother of Female: <span id="mother-of-female">DESERTFALCON002004</span>
+                            <button onclick="editDetail('mother-of-female')" class="button">Edit</button>
+                        </p>
+                    </div>
+                </div>
+            `,
+
+            21: `
+                <div class="section">
+                    <h3>Room 21</h3>
+                    <div class="details">
+                        <h4>Parents</h4>
+                        <p class="male-ring">Male Falcon Ring Number: <span id="male-ring">DESERTFALCON00211</span>
+                            <button onclick="editDetail('male-ring')" class="button">Edit</button>
+                        </p>
+                        <p class="female-ring">Female Falcon Ring Number: <span id="female-ring">DESERTFALCON00212</span>
+                            <button onclick="editDetail('female-ring')" class="button">Edit</button>
+                        </p>
+                        <h4>Offspring</h4>
+                        <p class="offspring-ring">Offspring Ring Number: <span id="offspring-ring">DESERTFALCON00213</span>
+                            <button onclick="editDetail('offspring-ring')" class="button">Edit</button>
+                        </p>
+                        <p class="offspring-hatch-date">Hatch Date: <span id="offspring-hatch-date">2024-03-01</span>
+                            <button onclick="editDetail('offspring-hatch-date')" class="button">Edit</button>
+                        </p>
+                        <p class="offspring-sex">Sex: <span id="offspring-sex">Male</span>
+                            <button onclick="editDetail('offspring-sex')" class="button">Edit</button>
+                        </p>
+                        <p class="species">Species: <span id="species">Falco peregrinus</span>
+                            <button onclick="editDetail('species')" class="button">Edit</button>
+                        </p>
+                        <h4>Grandparents</h4>
+                        <p>Father of Male: <span id="father-of-male">DESERTFALCON002101</span>
+                            <button onclick="editDetail('father-of-male')" class="button">Edit</button>
+                        </p>
+                        <p>Mother of Male: <span id="mother-of-male">DESERTFALCON002102</span>
+                            <button onclick="editDetail('mother-of-male')" class="button">Edit</button>
+                        </p>
+                        <p>Father of Female: <span id="father-of-female">DESERTFALCON002103</span>
+                            <button onclick="editDetail('father-of-female')" class="button">Edit</button>
+                        </p>
+                        <p>Mother of Female: <span id="mother-of-female">DESERTFALCON002104</span>
+                            <button onclick="editDetail('mother-of-female')" class="button">Edit</button>
+                        </p>
+                    </div>
+                </div>
+            `,
+
+            22: `
+                <div class="section">
+                    <h3>Room 22</h3>
+                    <div class="details">
+                        <h4>Parents</h4>
+                        <p class="male-ring">Male Falcon Ring Number: <span id="male-ring">DESERTFALCON00221</span>
+                            <button onclick="editDetail('male-ring')" class="button">Edit</button>
+                        </p>
+                        <p class="female-ring">Female Falcon Ring Number: <span id="female-ring">DESERTFALCON00222</span>
+                            <button onclick="editDetail('female-ring')" class="button">Edit</button>
+                        </p>
+                        <h4>Offspring</h4>
+                        <p class="offspring-ring">Offspring Ring Number: <span id="offspring-ring">DESERTFALCON00223</span>
+                            <button onclick="editDetail('offspring-ring')" class="button">Edit</button>
+                        </p>
+                        <p class="offspring-hatch-date">Hatch Date: <span id="offspring-hatch-date">2024-03-01</span>
+                            <button onclick="editDetail('offspring-hatch-date')" class="button">Edit</button>
+                        </p>
+                        <p class="offspring-sex">Sex: <span id="offspring-sex">Male</span>
+                            <button onclick="editDetail('offspring-sex')" class="button">Edit</button>
+                        </p>
+                        <p class="species">Species: <span id="species">Falco peregrinus</span>
+                            <button onclick="editDetail('species')" class="button">Edit</button>
+                        </p>
+                        <h4>Grandparents</h4>
+                        <p>Father of Male: <span id="father-of-male">DESERTFALCON002201</span>
+                            <button onclick="editDetail('father-of-male')" class="button">Edit</button>
+                        </p>
+                        <p>Mother of Male: <span id="mother-of-male">DESERTFALCON002202</span>
+                            <button onclick="editDetail('mother-of-male')" class="button">Edit</button>
+                        </p>
+                        <p>Father of Female: <span id="father-of-female">DESERTFALCON002203</span>
+                            <button onclick="editDetail('father-of-female')" class="button">Edit</button>
+                        </p>
+                        <p>Mother of Female: <span id="mother-of-female">DESERTFALCON002204</span>
+                            <button onclick="editDetail('mother-of-female')" class="button">Edit</button>
+                        </p>
+                    </div>
+                </div>
+            `,
+
+            23: `
+                <div class="section">
+                    <h3>Room 23</h3>
+                    <div class="details">
+                        <h4>Parents</h4>
+                        <p class="male-ring">Male Falcon Ring Number: <span id="male-ring">DESERTFALCON00231</span>
+                            <button onclick="editDetail('male-ring')" class="button">Edit</button>
+                        </p>
+                        <p class="female-ring">Female Falcon Ring Number: <span id="female-ring">DESERTFALCON00232</span>
+                            <button onclick="editDetail('female-ring')" class="button">Edit</button>
+                        </p>
+                        <h4>Offspring</h4>
+                        <p class="offspring-ring">Offspring Ring Number: <span id="offspring-ring">DESERTFALCON00233</span>
+                            <button onclick="editDetail('offspring-ring')" class="button">Edit</button>
+                        </p>
+                        <p class="offspring-hatch-date">Hatch Date: <span id="offspring-hatch-date">2024-03-01</span>
+                            <button onclick="editDetail('offspring-hatch-date')" class="button">Edit</button>
+                        </p>
+                        <p class="offspring-sex">Sex: <span id="offspring-sex">Male</span>
+                            <button onclick="editDetail('offspring-sex')" class="button">Edit</button>
+                        </p>
+                        <p class="species">Species: <span id="species">Falco peregrinus</span>
+                            <button onclick="editDetail('species')" class="button">Edit</button>
+                        </p>
+                        <h4>Grandparents</h4>
+                        <p>Father of Male: <span id="father-of-male">DESERTFALCON002301</span>
+                            <button onclick="editDetail('father-of-male')" class="button">Edit</button>
+                        </p>
+                        <p>Mother of Male: <span id="mother-of-male">DESERTFALCON002302</span>
+                            <button onclick="editDetail('mother-of-male')" class="button">Edit</button>
+                        </p>
+                        <p>Father of Female: <span id="father-of-female">DESERTFALCON002303</span>
+                            <button onclick="editDetail('father-of-female')" class="button">Edit</button>
+                        </p>
+                        <p>Mother of Female: <span id="mother-of-female">DESERTFALCON002304</span>
+                            <button onclick="editDetail('mother-of-female')" class="button">Edit</button>
+                        </p>
+                    </div>
+                </div>
+            `,
+
+            24: `
+                <div class="section">
+                    <h3>Room 24</h3>
+                    <div class="details">
+                        <h4>Parents</h4>
+                        <p class="male-ring">Male Falcon Ring Number: <span id="male-ring">DESERTFALCON00241</span>
+                            <button onclick="editDetail('male-ring')" class="button">Edit</button>
+                        </p>
+                        <p class="female-ring">Female Falcon Ring Number: <span id="female-ring">DESERTFALCON00242</span>
+                            <button onclick="editDetail('female-ring')" class="button">Edit</button>
+                        </p>
+                        <h4>Offspring</h4>
+                        <p class="offspring-ring">Offspring Ring Number: <span id="offspring-ring">DESERTFALCON00243</span>
+                            <button onclick="editDetail('offspring-ring')" class="button">Edit</button>
+                        </p>
+                        <p class="offspring-hatch-date">Hatch Date: <span id="offspring-hatch-date">2024-03-01</span>
+                            <button onclick="editDetail('offspring-hatch-date')" class="button">Edit</button>
+                        </p>
+                        <p class="offspring-sex">Sex: <span id="offspring-sex">Male</span>
+                            <button onclick="editDetail('offspring-sex')" class="button">Edit</button>
+                        </p>
+                        <p class="species">Species: <span id="species">Falco peregrinus</span>
+                            <button onclick="editDetail('species')" class="button">Edit</button>
+                        </p>
+                        <h4>Grandparents</h4>
+                        <p>Father of Male: <span id="father-of-male">DESERTFALCON002401</span>
+                            <button onclick="editDetail('father-of-male')" class="button">Edit</button>
+                        </p>
+                        <p>Mother of Male: <span id="mother-of-male">DESERTFALCON002402</span>
+                            <button onclick="editDetail('mother-of-male')" class="button">Edit</button>
+                        </p>
+                        <p>Father of Female: <span id="father-of-female">DESERTFALCON002403</span>
+                            <button onclick="editDetail('father-of-female')" class="button">Edit</button>
+                        </p>
+                        <p>Mother of Female: <span id="mother-of-female">DESERTFALCON002404</span>
+                            <button onclick="editDetail('mother-of-female')" class="button">Edit</button>
+                        </p>
+                    </div>
+                </div>
+            `,
+
+            25: `
+                <div class="section">
+                    <h3>Room 25</h3>
+                    <div class="details">
+                        <h4>Parents</h4>
+                        <p class="male-ring">Male Falcon Ring Number: <span id="male-ring">DESERTFALCON00251</span>
+                            <button onclick="editDetail('male-ring')" class="button">Edit</button>
+                        </p>
+                        <p class="female-ring">Female Falcon Ring Number: <span id="female-ring">DESERTFALCON00252</span>
+                            <button onclick="editDetail('female-ring')" class="button">Edit</button>
+                        </p>
+                        <h4>Offspring</h4>
+                        <p class="offspring-ring">Offspring Ring Number: <span id="offspring-ring">DESERTFALCON00253</span>
+                            <button onclick="editDetail('offspring-ring')" class="button">Edit</button>
+                        </p>
+                        <p class="offspring-hatch-date">Hatch Date: <span id="offspring-hatch-date">2024-03-01</span>
+                            <button onclick="editDetail('offspring-hatch-date')" class="button">Edit</button>
+                        </p>
+                        <p class="offspring-sex">Sex: <span id="offspring-sex">Male</span>
+                            <button onclick="editDetail('offspring-sex')" class="button">Edit</button>
+                        </p>
+                        <p class="species">Species: <span id="species">Falco peregrinus</span>
+                            <button onclick="editDetail('species')" class="button">Edit</button>
+                        </p>
+                        <h4>Grandparents</h4>
+                        <p>Father of Male: <span id="father-of-male">DESERTFALCON002501</span>
+                            <button onclick="editDetail('father-of-male')" class="button">Edit</button>
+                        </p>
+                        <p>Mother of Male: <span id="mother-of-male">DESERTFALCON002502</span>
+                            <button onclick="editDetail('mother-of-male')" class="button">Edit</button>
+                        </p>
+                        <p>Father of Female: <span id="father-of-female">DESERTFALCON002503</span>
+                            <button onclick="editDetail('father-of-female')" class="button">Edit</button>
+                        </p>
+                        <p>Mother of Female: <span id="mother-of-female">DESERTFALCON002504</span>
+                            <button onclick="editDetail('mother-of-female')" class="button">Edit</button>
+                        </p>
+                    </div>
+                </div>
+            `,
+
+            26: `
+                <div class="section">
+                    <h3>Room 26</h3>
+                    <div class="details">
+                        <h4>Parents</h4>
+                        <p class="male-ring">Male Falcon Ring Number: <span id="male-ring">DESERTFALCON00261</span>
+                            <button onclick="editDetail('male-ring')" class="button">Edit</button>
+                        </p>
+                        <p class="female-ring">Female Falcon Ring Number: <span id="female-ring">DESERTFALCON00262</span>
+                            <button onclick="editDetail('female-ring')" class="button">Edit</button>
+                        </p>
+                        <h4>Offspring</h4>
+                        <p class="offspring-ring">Offspring Ring Number: <span id="offspring-ring">DESERTFALCON00263</span>
+                            <button onclick="editDetail('offspring-ring')" class="button">Edit</button>
+                        </p>
+                        <p class="offspring-hatch-date">Hatch Date: <span id="offspring-hatch-date">2024-03-01</span>
+                            <button onclick="editDetail('offspring-hatch-date')" class="button">Edit</button>
+                        </p>
+                        <p class="offspring-sex">Sex: <span id="offspring-sex">Male</span>
+                            <button onclick="editDetail('offspring-sex')" class="button">Edit</button>
+                        </p>
+                        <p class="species">Species: <span id="species">Falco peregrinus</span>
+                            <button onclick="editDetail('species')" class="button">Edit</button>
+                        </p>
+                        <h4>Grandparents</h4>
+                        <p>Father of Male: <span id="father-of-male">DESERTFALCON002601</span>
+                            <button onclick="editDetail('father-of-male')" class="button">Edit</button>
+                        </p>
+                        <p>Mother of Male: <span id="mother-of-male">DESERTFALCON002602</span>
+                            <button onclick="editDetail('mother-of-male')" class="button">Edit</button>
+                        </p>
+                        <p>Father of Female: <span id="father-of-female">DESERTFALCON002603</span>
+                            <button onclick="editDetail('father-of-female')" class="button">Edit</button>
+                        </p>
+                        <p>Mother of Female: <span id="mother-of-female">DESERTFALCON002604</span>
+                            <button onclick="editDetail('mother-of-female')" class="button">Edit</button>
+                        </p>
+                    </div>
+                </div>
+            `,
+
+            27: `
+                <div class="section">
+                    <h3>Room 27</h3>
+                    <div class="details">
+                        <h4>Parents</h4>
+                        <p class="male-ring">Male Falcon Ring Number: <span id="male-ring">DESERTFALCON00271</span>
+                            <button onclick="editDetail('male-ring')" class="button">Edit</button>
+                        </p>
+                        <p class="female-ring">Female Falcon Ring Number: <span id="female-ring">DESERTFALCON00272</span>
+                            <button onclick="editDetail('female-ring')" class="button">Edit</button>
+                        </p>
+                        <h4>Offspring</h4>
+                        <p class="offspring-ring">Offspring Ring Number: <span id="offspring-ring">DESERTFALCON00273</span>
+                            <button onclick="editDetail('offspring-ring')" class="button">Edit</button>
+                        </p>
+                        <p class="offspring-hatch-date">Hatch Date: <span id="offspring-hatch-date">2024-03-01</span>
+                            <button onclick="editDetail('offspring-hatch-date')" class="button">Edit</button>
+                        </p>
+                        <p class="offspring-sex">Sex: <span id="offspring-sex">Male</span>
+                            <button onclick="editDetail('offspring-sex')" class="button">Edit</button>
+                        </p>
+                        <p class="species">Species: <span id="species">Falco peregrinus</span>
+                            <button onclick="editDetail('species')" class="button">Edit</button>
+                        </p>
+                        <h4>Grandparents</h4>
+                        <p>Father of Male: <span id="father-of-male">DESERTFALCON002701</span>
+                            <button onclick="editDetail('father-of-male')" class="button">Edit</button>
+                        </p>
+                        <p>Mother of Male: <span id="mother-of-male">DESERTFALCON002702</span>
+                            <button onclick="editDetail('mother-of-male')" class="button">Edit</button>
+                        </p>
+                        <p>Father of Female: <span id="father-of-female">DESERTFALCON002703</span>
+                            <button onclick="editDetail('father-of-female')" class="button">Edit</button>
+                        </p>
+                        <p>Mother of Female: <span id="mother-of-female">DESERTFALCON002704</span>
+                            <button onclick="editDetail('mother-of-female')" class="button">Edit</button>
+                        </p>
+                    </div>
+                </div>
+            `,
+
+            28: `
+                <div class="section">
+                    <h3>Room 28</h3>
+                    <div class="details">
+                        <h4>Parents</h4>
+                        <p class="male-ring">Male Falcon Ring Number: <span id="male-ring">DESERTFALCON00281</span>
+                            <button onclick="editDetail('male-ring')" class="button">Edit</button>
+                        </p>
+                        <p class="female-ring">Female Falcon Ring Number: <span id="female-ring">DESERTFALCON00282</span>
+                            <button onclick="editDetail('female-ring')" class="button">Edit</button>
+                        </p>
+                        <h4>Offspring</h4>
+                        <p class="offspring-ring">Offspring Ring Number: <span id="offspring-ring">DESERTFALCON00283</span>
+                            <button onclick="editDetail('offspring-ring')" class="button">Edit</button>
+                        </p>
+                        <p class="offspring-hatch-date">Hatch Date: <span id="offspring-hatch-date">2024-03-01</span>
+                            <button onclick="editDetail('offspring-hatch-date')" class="button">Edit</button>
+                        </p>
+                        <p class="offspring-sex">Sex: <span id="offspring-sex">Male</span>
+                            <button onclick="editDetail('offspring-sex')" class="button">Edit</button>
+                        </p>
+                        <p class="species">Species: <span id="species">Falco peregrinus</span>
+                            <button onclick="editDetail('species')" class="button">Edit</button>
+                        </p>
+                        <h4>Grandparents</h4>
+                        <p>Father of Male: <span id="father-of-male">DESERTFALCON002801</span>
+                            <button onclick="editDetail('father-of-male')" class="button">Edit</button>
+                        </p>
+                        <p>Mother of Male: <span id="mother-of-male">DESERTFALCON002802</span>
+                            <button onclick="editDetail('mother-of-male')" class="button">Edit</button>
+                        </p>
+                        <p>Father of Female: <span id="father-of-female">DESERTFALCON002803</span>
+                            <button onclick="editDetail('father-of-female')" class="button">Edit</button>
+                        </p>
+                        <p>Mother of Female: <span id="mother-of-female">DESERTFALCON002804</span>
+                            <button onclick="editDetail('mother-of-female')" class="button">Edit</button>
+                        </p>
+                    </div>
+                </div>
+            `,
+
+            29: `
+                <div class="section">
+                    <h3>Room 29</h3>
+                    <div class="details">
+                        <h4>Parents</h4>
+                        <p class="male-ring">Male Falcon Ring Number: <span id="male-ring">DESERTFALCON00291</span>
+                            <button onclick="editDetail('male-ring')" class="button">Edit</button>
+                        </p>
+                        <p class="female-ring">Female Falcon Ring Number: <span id="female-ring">DESERTFALCON00292</span>
+                            <button onclick="editDetail('female-ring')" class="button">Edit</button>
+                        </p>
+                        <h4>Offspring</h4>
+                        <p class="offspring-ring">Offspring Ring Number: <span id="offspring-ring">DESERTFALCON00293</span>
+                            <button onclick="editDetail('offspring-ring')" class="button">Edit</button>
+                        </p>
+                        <p class="offspring-hatch-date">Hatch Date: <span id="offspring-hatch-date">2024-03-01</span>
+                            <button onclick="editDetail('offspring-hatch-date')" class="button">Edit</button>
+                        </p>
+                        <p class="offspring-sex">Sex: <span id="offspring-sex">Male</span>
+                            <button onclick="editDetail('offspring-sex')" class="button">Edit</button>
+                        </p>
+                        <p class="species">Species: <span id="species">Falco peregrinus</span>
+                            <button onclick="editDetail('species')" class="button">Edit</button>
+                        </p>
+                        <h4>Grandparents</h4>
+                        <p>Father of Male: <span id="father-of-male">DESERTFALCON002901</span>
+                            <button onclick="editDetail('father-of-male')" class="button">Edit</button>
+                        </p>
+                        <p>Mother of Male: <span id="mother-of-male">DESERTFALCON002902</span>
+                            <button onclick="editDetail('mother-of-male')" class="button">Edit</button>
+                        </p>
+                        <p>Father of Female: <span id="father-of-female">DESERTFALCON002903</span>
+                            <button onclick="editDetail('father-of-female')" class="button">Edit</button>
+                        </p>
+                        <p>Mother of Female: <span id="mother-of-female">DESERTFALCON002904</span>
+                            <button onclick="editDetail('mother-of-female')" class="button">Edit</button>
+                        </p>
+                    </div>
+                </div>
+            `,
+
+            30: `
+                <div class="section">
+                    <h3>Room 30</h3>
+                    <div class="details">
+                        <h4>Parents</h4>
+                        <p class="male-ring">Male Falcon Ring Number: <span id="male-ring">DESERTFALCON00301</span>
+                            <button onclick="editDetail('male-ring')" class="button">Edit</button>
+                        </p>
+                        <p class="female-ring">Female Falcon Ring Number: <span id="female-ring">DESERTFALCON00302</span>
+                            <button onclick="editDetail('female-ring')" class="button">Edit</button>
+                        </p>
+                        <h4>Offspring</h4>
+                        <p class="offspring-ring">Offspring Ring Number: <span id="offspring-ring">DESERTFALCON00303</span>
+                            <button onclick="editDetail('offspring-ring')" class="button">Edit</button>
+                        </p>
+                        <p class="offspring-hatch-date">Hatch Date: <span id="offspring-hatch-date">2024-03-01</span>
+                            <button onclick="editDetail('offspring-hatch-date')" class="button">Edit</button>
+                        </p>
+                        <p class="offspring-sex">Sex: <span id="offspring-sex">Male</span>
+                            <button onclick="editDetail('offspring-sex')" class="button">Edit</button>
+                        </p>
+                        <p class="species">Species: <span id="species">Falco peregrinus</span>
+                            <button onclick="editDetail('species')" class="button">Edit</button>
+                        </p>
+                        <h4>Grandparents</h4>
+                        <p>Father of Male: <span id="father-of-male">DESERTFALCON003001</span>
+                            <button onclick="editDetail('father-of-male')" class="button">Edit</button>
+                        </p>
+                        <p>Mother of Male: <span id="mother-of-male">DESERTFALCON003002</span>
+                            <button onclick="editDetail('mother-of-male')" class="button">Edit</button>
+                        </p>
+                        <p>Father of Female: <span id="father-of-female">DESERTFALCON003003</span>
+                            <button onclick="editDetail('father-of-female')" class="button">Edit</button>
+                        </p>
+                        <p>Mother of Female: <span id="mother-of-female">DESERTFALCON003004</span>
+                            <button onclick="editDetail('mother-of-female')" class="button">Edit</button>
+                        </p>
+                    </div>
+                </div>
+            `,
+
+            31: `
+                <div class="section">
+                    <h3>Room 31</h3>
+                    <div class="details">
+                        <h4>Parents</h4>
+                        <p class="male-ring">Male Falcon Ring Number: <span id="male-ring">DESERTFALCON00311</span>
+                            <button onclick="editDetail('male-ring')" class="button">Edit</button>
+                        </p>
+                        <p class="female-ring">Female Falcon Ring Number: <span id="female-ring">DESERTFALCON00312</span>
+                            <button onclick="editDetail('female-ring')" class="button">Edit</button>
+                        </p>
+                        <h4>Offspring</h4>
+                        <p class="offspring-ring">Offspring Ring Number: <span id="offspring-ring">DESERTFALCON00313</span>
+                            <button onclick="editDetail('offspring-ring')" class="button">Edit</button>
+                        </p>
+                        <p class="offspring-hatch-date">Hatch Date: <span id="offspring-hatch-date">2024-03-01</span>
+                            <button onclick="editDetail('offspring-hatch-date')" class="button">Edit</button>
+                        </p>
+                        <p class="offspring-sex">Sex: <span id="offspring-sex">Male</span>
+                            <button onclick="editDetail('offspring-sex')" class="button">Edit</button>
+                        </p>
+                        <p class="species">Species: <span id="species">Falco peregrinus</span>
+                            <button onclick="editDetail('species')" class="button">Edit</button>
+                        </p>
+                        <h4>Grandparents</h4>
+                        <p>Father of Male: <span id="father-of-male">DESERTFALCON003101</span>
+                            <button onclick="editDetail('father-of-male')" class="button">Edit</button>
+                        </p>
+                        <p>Mother of Male: <span id="mother-of-male">DESERTFALCON003102</span>
+                            <button onclick="editDetail('mother-of-male')" class="button">Edit</button>
+                        </p>
+                        <p>Father of Female: <span id="father-of-female">DESERTFALCON003103</span>
+                            <button onclick="editDetail('father-of-female')" class="button">Edit</button>
+                        </p>
+                        <p>Mother of Female: <span id="mother-of-female">DESERTFALCON003104</span>
+                            <button onclick="editDetail('mother-of-female')" class="button">Edit</button>
+                        </p>
+                    </div>
+                </div>
+            `,
+
+            32: `
+                <div class="section">
+                    <h3>Room 32</h3>
+                    <div class="details">
+                        <h4>Parents</h4>
+                        <p class="male-ring">Male Falcon Ring Number: <span id="male-ring">DESERTFALCON00321</span>
+                            <button onclick="editDetail('male-ring')" class="button">Edit</button>
+                        </p>
+                        <p class="female-ring">Female Falcon Ring Number: <span id="female-ring">DESERTFALCON00322</span>
+                            <button onclick="editDetail('female-ring')" class="button">Edit</button>
+                        </p>
+                        <h4>Offspring</h4>
+                        <p class="offspring-ring">Offspring Ring Number: <span id="offspring-ring">DESERTFALCON00323</span>
+                            <button onclick="editDetail('offspring-ring')" class="button">Edit</button>
+                        </p>
+                        <p class="offspring-hatch-date">Hatch Date: <span id="offspring-hatch-date">2024-03-01</span>
+                            <button onclick="editDetail('offspring-hatch-date')" class="button">Edit</button>
+                        </p>
+                        <p class="offspring-sex">Sex: <span id="offspring-sex">Male</span>
+                            <button onclick="editDetail('offspring-sex')" class="button">Edit</button>
+                        </p>
+                        <p class="species">Species: <span id="species">Falco peregrinus</span>
+                            <button onclick="editDetail('species')" class="button">Edit</button>
+                        </p>
+                        <h4>Grandparents</h4>
+                        <p>Father of Male: <span id="father-of-male">DESERTFALCON003201</span>
+                            <button onclick="editDetail('father-of-male')" class="button">Edit</button>
+                        </p>
+                        <p>Mother of Male: <span id="mother-of-male">DESERTFALCON003202</span>
+                            <button onclick="editDetail('mother-of-male')" class="button">Edit</button>
+                        </p>
+                        <p>Father of Female: <span id="father-of-female">DESERTFALCON003203</span>
+                            <button onclick="editDetail('father-of-female')" class="button">Edit</button>
+                        </p>
+                        <p>Mother of Female: <span id="mother-of-female">DESERTFALCON003204</span>
+                            <button onclick="editDetail('mother-of-female')" class="button">Edit</button>
+                        </p>
+                    </div>
+                </div>
+            `,
+
+            33: `
+                <div class="section">
+                    <h3>Room 33</h3>
+                    <div class="details">
+                        <h4>Parents</h4>
+                        <p class="male-ring">Male Falcon Ring Number: <span id="male-ring">DESERTFALCON00331</span>
+                            <button onclick="editDetail('male-ring')" class="button">Edit</button>
+                        </p>
+                        <p class="female-ring">Female Falcon Ring Number: <span id="female-ring">DESERTFALCON00332</span>
+                            <button onclick="editDetail('female-ring')" class="button">Edit</button>
+                        </p>
+                        <h4>Offspring</h4>
+                        <p class="offspring-ring">Offspring Ring Number: <span id="offspring-ring">DESERTFALCON00333</span>
+                            <button onclick="editDetail('offspring-ring')" class="button">Edit</button>
+                        </p>
+                        <p class="offspring-hatch-date">Hatch Date: <span id="offspring-hatch-date">2024-03-01</span>
+                            <button onclick="editDetail('offspring-hatch-date')" class="button">Edit</button>
+                        </p>
+                        <p class="offspring-sex">Sex: <span id="offspring-sex">Male</span>
+                            <button onclick="editDetail('offspring-sex')" class="button">Edit</button>
+                        </p>
+                        <p class="species">Species: <span id="species">Falco peregrinus</span>
+                            <button onclick="editDetail('species')" class="button">Edit</button>
+                        </p>
+                        <h4>Grandparents</h4>
+                        <p>Father of Male: <span id="father-of-male">DESERTFALCON003301</span>
+                            <button onclick="editDetail('father-of-male')" class="button">Edit</button>
+                        </p>
+                        <p>Mother of Male: <span id="mother-of-male">DESERTFALCON003302</span>
+                            <button onclick="editDetail('mother-of-male')" class="button">Edit</button>
+                        </p>
+                        <p>Father of Female: <span id="father-of-female">DESERTFALCON003303</span>
+                            <button onclick="editDetail('father-of-female')" class="button">Edit</button>
+                        </p>
+                        <p>Mother of Female: <span id="mother-of-female">DESERTFALCON003304</span>
+                            <button onclick="editDetail('mother-of-female')" class="button">Edit</button>
+                        </p>
+                    </div>
+                </div>
+            `,
+
+            34: `
+                <div class="section">
+                    <h3>Room 34</h3>
+                    <div class="details">
+                        <h4>Parents</h4>
+                        <p class="male-ring">Male Falcon Ring Number: <span id="male-ring">DESERTFALCON00341</span>
+                            <button onclick="editDetail('male-ring')" class="button">Edit</button>
+                        </p>
+                        <p class="female-ring">Female Falcon Ring Number: <span id="female-ring">DESERTFALCON00342</span>
+                            <button onclick="editDetail('female-ring')" class="button">Edit</button>
+                        </p>
+                        <h4>Offspring</h4>
+                        <p class="offspring-ring">Offspring Ring Number: <span id="offspring-ring">DESERTFALCON00343</span>
+                            <button onclick="editDetail('offspring-ring')" class="button">Edit</button>
+                        </p>
+                        <p class="offspring-hatch-date">Hatch Date: <span id="offspring-hatch-date">2024-03-01</span>
+                            <button onclick="editDetail('offspring-hatch-date')" class="button">Edit</button>
+                        </p>
+                        <p class="offspring-sex">Sex: <span id="offspring-sex">Male</span>
+                            <button onclick="editDetail('offspring-sex')" class="button">Edit</button>
+                        </p>
+                        <p class="species">Species: <span id="species">Falco peregrinus</span>
+                            <button onclick="editDetail('species')" class="button">Edit</button>
+                        </p>
+                        <h4>Grandparents</h4>
+                        <p>Father of Male: <span id="father-of-male">DESERTFALCON003401</span>
+                            <button onclick="editDetail('father-of-male')" class="button">Edit</button>
+                        </p>
+                        <p>Mother of Male: <span id="mother-of-male">DESERTFALCON003402</span>
+                            <button onclick="editDetail('mother-of-male')" class="button">Edit</button>
+                        </p>
+                        <p>Father of Female: <span id="father-of-female">DESERTFALCON003403</span>
+                            <button onclick="editDetail('father-of-female')" class="button">Edit</button>
+                        </p>
+                        <p>Mother of Female: <span id="mother-of-female">DESERTFALCON003404</span>
+                            <button onclick="editDetail('mother-of-female')" class="button">Edit</button>
+                        </p>
+                    </div>
+                </div>
+            `,
+
+            35: `
+                <div class="section">
+                    <h3>Room 35</h3>
+                    <div class="details">
+                        <h4>Parents</h4>
+                        <p class="male-ring">Male Falcon Ring Number: <span id="male-ring">DESERTFALCON00351</span>
+                            <button onclick="editDetail('male-ring')" class="button">Edit</button>
+                        </p>
+                        <p class="female-ring">Female Falcon Ring Number: <span id="female-ring">DESERTFALCON00352</span>
+                            <button onclick="editDetail('female-ring')" class="button">Edit</button>
+                        </p>
+                        <h4>Offspring</h4>
+                        <p class="offspring-ring">Offspring Ring Number: <span id="offspring-ring">DESERTFALCON00353</span>
+                            <button onclick="editDetail('offspring-ring')" class="button">Edit</button>
+                        </p>
+                        <p class="offspring-hatch-date">Hatch Date: <span id="offspring-hatch-date">2024-03-01</span>
+                            <button onclick="editDetail('offspring-hatch-date')" class="button">Edit</button>
+                        </p>
+                        <p class="offspring-sex">Sex: <span id="offspring-sex">Male</span>
+                            <button onclick="editDetail('offspring-sex')" class="button">Edit</button>
+                        </p>
+                        <p class="species">Species: <span id="species">Falco peregrinus</span>
+                            <button onclick="editDetail('species')" class="button">Edit</button>
+                        </p>
+                        <h4>Grandparents</h4>
+                        <p>Father of Male: <span id="father-of-male">DESERTFALCON003501</span>
+                            <button onclick="editDetail('father-of-male')" class="button">Edit</button>
+                        </p>
+                        <p>Mother of Male: <span id="mother-of-male">DESERTFALCON003502</span>
+                            <button onclick="editDetail('mother-of-male')" class="button">Edit</button>
+                        </p>
+                        <p>Father of Female: <span id="father-of-female">DESERTFALCON003503</span>
+                            <button onclick="editDetail('father-of-female')" class="button">Edit</button>
+                        </p>
+                        <p>Mother of Female: <span id="mother-of-female">DESERTFALCON003504</span>
+                            <button onclick="editDetail('mother-of-female')" class="button">Edit</button>
+                        </p>
+                    </div>
+                </div>
+            `,
+
+            36: `
+                <div class="section">
+                    <h3>Room 36</h3>
+                    <div class="details">
+                        <h4>Parents</h4>
+                        <p class="male-ring">Male Falcon Ring Number: <span id="male-ring">DESERTFALCON00361</span>
+                            <button onclick="editDetail('male-ring')" class="button">Edit</button>
+                        </p>
+                        <p class="female-ring">Female Falcon Ring Number: <span id="female-ring">DESERTFALCON00362</span>
+                            <button onclick="editDetail('female-ring')" class="button">Edit</button>
+                        </p>
+                        <h4>Offspring</h4>
+                        <p class="offspring-ring">Offspring Ring Number: <span id="offspring-ring">DESERTFALCON00363</span>
+                            <button onclick="editDetail('offspring-ring')" class="button">Edit</button>
+                        </p>
+                        <p class="offspring-hatch-date">Hatch Date: <span id="offspring-hatch-date">2024-03-01</span>
+                            <button onclick="editDetail('offspring-hatch-date')" class="button">Edit</button>
+                        </p>
+                        <p class="offspring-sex">Sex: <span id="offspring-sex">Male</span>
+                            <button onclick="editDetail('offspring-sex')" class="button">Edit</button>
+                        </p>
+                        <p class="species">Species: <span id="species">Falco peregrinus</span>
+                            <button onclick="editDetail('species')" class="button">Edit</button>
+                        </p>
+                        <h4>Grandparents</h4>
+                        <p>Father of Male: <span id="father-of-male">DESERTFALCON003601</span>
+                            <button onclick="editDetail('father-of-male')" class="button">Edit</button>
+                        </p>
+                        <p>Mother of Male: <span id="mother-of-male">DESERTFALCON003602</span>
+                            <button onclick="editDetail('mother-of-male')" class="button">Edit</button>
+                        </p>
+                        <p>Father of Female: <span id="father-of-female">DESERTFALCON003603</span>
+                            <button onclick="editDetail('father-of-female')" class="button">Edit</button>
+                        </p>
+                        <p>Mother of Female: <span id="mother-of-female">DESERTFALCON003604</span>
+                            <button onclick="editDetail('mother-of-female')" class="button">Edit</button>
+                        </p>
+                    </div>
+                </div>
+            `,
+
+        };
+
+        function showRoom(roomNumber) {
+            document.getElementById('room-details').innerHTML = rooms[roomNumber];
+        }
+
+        function toggleTheme() {
+            document.body.classList.toggle('night-mode');
+        }
+
+        function editDetail(id) {
+            const currentEditId = id;
+            document.querySelector('.details').classList.add('hidden');
+            document.querySelector('.edit-form').classList.remove('hidden');
+            document.getElementById('edit-value').value = document.getElementById(id).innerText;
+        }
+
+        function saveDetail() {
+            const newValue = document.getElementById('edit-value').value;
+            document.getElementById(currentEditId).innerText = newValue;
+            document.querySelector('.details').classList.remove('hidden');
+            document.querySelector('.edit-form').classList.add('hidden');
+        }
+
+        function printDetails() {
+            window.print();
+        }
+    </script>
+</body>
+</html>
